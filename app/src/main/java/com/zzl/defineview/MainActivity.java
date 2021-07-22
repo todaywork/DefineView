@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate zancun");
         Log.d(TAG, "onCreate 修改了主干的代码");
         Log.d(TAG, "onCreate 我再次又修改了主干的代码");
+        Log.d(TAG, "onCreate 我第三次修改主干的代码了，添加注释");
     }
     private Runnable mRunnable=new Runnable() {
         @Override
