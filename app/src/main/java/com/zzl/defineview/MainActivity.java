@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate branch2");
         Log.d(TAG, "onCreate branch`1");
         Log.d(TAG, "onCreate branch2");
+        Log.d(TAG, "onCreate zancun");
     }
     private Runnable mRunnable=new Runnable() {
         @Override
