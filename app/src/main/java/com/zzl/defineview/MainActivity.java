@@ -1,12 +1,5 @@
 package com.zzl.defineview;
 
-import java.lang.reflect.Field;
-
-import com.bumptech.glide.load.engine.cache.MemorySizeCalculator;
-import com.zzl.defineview.cookie.CookieJarImpl;
-import com.zzl.defineview.cookie.PersistentCookieStore;
-import com.zzl.defineview.priorityqueue.TestSortManager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +7,13 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import com.bumptech.glide.load.engine.cache.MemorySizeCalculator;
+import com.zzl.defineview.cookie.CookieJarImpl;
+import com.zzl.defineview.cookie.PersistentCookieStore;
+import com.zzl.defineview.priorityqueue.TestSortManager;
+
+import java.lang.reflect.Field;
 
 import androidx.appcompat.app.AppCompatActivity;
 import okhttp3.OkHttpClient;
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     private Runnable mRunnable=new Runnable() {
         @Override
         public void run() {
-
+            Log.d(TAG, "run branch2");
         }
     };
 
