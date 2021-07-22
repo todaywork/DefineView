@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
 //        }
         TestSortManager.getInstance().initData();
         TestSortManager.getInstance().printSortResult();
+        //test3git
+        MyView myView1 = new MyView(this);
 
     }
     private Runnable mRunnable=new Runnable() {
