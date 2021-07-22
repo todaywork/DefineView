@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
     public void onWindowAttributesChanged(WindowManager.LayoutParams params) {
         super.onWindowAttributesChanged(params);
         Log.d(TAG, "onWindowAttributesChanged ");
+        Log.d(TAG, "onWindowAttributesChanged ");
     }
 
     @Override
