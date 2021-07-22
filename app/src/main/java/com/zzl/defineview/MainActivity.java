@@ -57,10 +57,12 @@ public class MainActivity extends AppCompatActivity {
 //        }
         TestSortManager.getInstance().initData();
         TestSortManager.getInstance().printSortResult();
+
         //test3git
         MyView myView2 = new MyView(this);
         MyView myView3 = new MyView(this);
         Log.d(TAG, "onCreate branch2 的修改");
+
     }
     private Runnable mRunnable=new Runnable() {
         @Override
@@ -79,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
     public void onWindowAttributesChanged(WindowManager.LayoutParams params) {
         super.onWindowAttributesChanged(params);
         Log.d(TAG, "onWindowAttributesChanged ");
+
     }
 
     @Override
@@ -87,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         //最终会调用windowmanage的updaviewlayout界面刷新。
 
     }
+
 
 
     public void click(View view) {
