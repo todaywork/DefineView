@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.bumptech.glide.load.engine.cache.MemorySizeCalculator;
 import com.zzl.defineview.cookie.CookieJarImpl;
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         MyView myView3 = new MyView(this);
         Log.d(TAG, "onCreate branch2 的修改");
 
+        Log.d(TAG, "onCreate branch1 再次修改");
+        Toast.makeText(MainActivity.this, "test branch1", Toast.LENGTH_SHORT).show();
     }
     private Runnable mRunnable=new Runnable() {
         @Override
