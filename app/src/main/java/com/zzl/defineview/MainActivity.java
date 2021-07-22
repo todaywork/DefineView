@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         //test3git
         MyView myView2 = new MyView(this);
         MyView myView3 = new MyView(this);
-
+        Log.d(TAG, "onCreate branch2 的修改");
     }
     private Runnable mRunnable=new Runnable() {
         @Override
