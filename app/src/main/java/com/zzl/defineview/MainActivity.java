@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
 //        }
         TestSortManager.getInstance().initData();
         TestSortManager.getInstance().printSortResult();
-
+        //branch1
+        Log.d(TAG, "onCreate branch1 的修改");
     }
     private Runnable mRunnable=new Runnable() {
         @Override
