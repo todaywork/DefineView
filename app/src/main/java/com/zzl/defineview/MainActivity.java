@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate branch2");
         Log.d(TAG, "onCreate zancun");
         Log.d(TAG, "onCreate 修改了主干的代码");
+        Log.d(TAG, "onCreate 我再次又修改了主干的代码");
     }
     private Runnable mRunnable=new Runnable() {
         @Override
