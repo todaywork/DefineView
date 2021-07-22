@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "test branch1", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onCreate branch2");
         Log.d(TAG, "onCreate branch`1");
-
+        Log.d(TAG, "onCreate branch2");
     }
     private Runnable mRunnable=new Runnable() {
         @Override
