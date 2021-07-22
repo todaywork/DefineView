@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.1"
@@ -16,6 +17,16 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+    }
+    //优先编译framework.jar包，而不是优先编译/sdk/platform/android.jar包。因为android.jar包没有hide和com.android.internal包的类
+    // 和api。所以无法编译通过。在studio中点击进入的是sdk里面的源码。用framework的jar包（正常电视或者设备中如下目录
+    // 有该jar包/system/framework/framework.jar）
+    //如果不用下面的，则无法编译该jar包，导致编译失败。系统应用开发
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs.add('-Xbootclasspath/p:app/libs/framework.jar')
+        }
     }
 }
 

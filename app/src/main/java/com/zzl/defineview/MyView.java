@@ -27,6 +27,7 @@ public class MyView extends LinearLayout {
         super(context, attrs);
         View view = View.inflate(context, R.layout.my_view, this);
         mTextView = (TextView) view.findViewById(R.id.text);
+
     }
 
 
